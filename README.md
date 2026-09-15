@@ -1,20 +1,68 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Nimma's Multispeciality Dental Clinic
 
-# Run and deploy your AI Studio app
+A single-page marketing website for Nimma's Multispeciality Dental Clinic
+(Kamareddy, Telangana) — built with React 19, TypeScript, Vite, and Tailwind
+CSS v4. The whole site is a self-contained, client-side app: interactive
+before/after slider, services guide, appointment-booking flow, clinic
+location map, team bios, FAQ, and reviews. There is no backend and nothing
+to configure — it just runs.
 
-This contains everything you need to run your app locally.
+## Prerequisites
 
-View your app in AI Studio: https://ai.studio/apps/32b43452-fab4-492c-95d3-5c51a3dc0dca
+- [Node.js](https://nodejs.org/) 18 or later (includes npm)
 
-## Run Locally
+## Run locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+The dev server starts at `http://localhost:3000`.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Build for production
+
+```bash
+npm run build
+```
+
+This outputs a fully static site to `dist/` — plain HTML, CSS, and JS, no
+server required. Preview the production build locally with:
+
+```bash
+npm run preview
+```
+
+## Deploy
+
+Because the build output is fully static, `dist/` can be deployed to any
+static host: Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3 + CloudFront,
+or a plain Nginx/Apache server. Most of these platforms (Netlify, Vercel,
+Cloudflare Pages) can also build directly from this repository — just point
+them at it; they'll detect Vite automatically and run `npm run build` for you.
+
+## Project structure
+
+```
+├── index.html          Entry HTML (title, meta tags, favicon)
+├── public/              Static assets served as-is
+│   ├── favicon.svg
+│   └── images/           Photos actually used on the site
+├── src/
+│   ├── main.tsx          App entry point
+│   ├── App.tsx            All page sections/components
+│   ├── index.css          Tailwind import + theme (brand colors, fonts)
+│   └── assets/images/     A few unused spare/reference photos kept from
+│                          the original export — safe to delete or swap in
+├── vite.config.ts
+├── tsconfig.json
+└── package.json
+```
+
+## Tech stack
+
+- **React 19** + **TypeScript**
+- **Vite 6** — dev server & build
+- **Tailwind CSS v4** — styling, theme defined in `src/index.css`
+- **Motion** (`motion/react`) — scroll/animation effects
+- **lucide-react** — icons

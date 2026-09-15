@@ -104,8 +104,8 @@ const BeforeAfterSlider = () => {
       subtitle: 'Braces & Clear Aligners',
       beforeTip: 'Crowded & Misaligned Teeth',
       afterTip: 'Perfect Aesthetic Arch',
-      beforeImg: 'https://github.com/Nikphill/Nimmasdentalimgs/blob/main/crooked.png',
-      afterImg: 'https://github.com/Nikphill/Nimmasdentalimgs/blob/main/crooked%202.png',
+      beforeImg: 'https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=800&h=600',
+      afterImg: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=800&h=600',
       desc: 'Achieved a beautiful symmetrical smile arch and corrected heavy diagnostic crowding within 14 months using premium custom alignments.'
     },
     {
@@ -465,12 +465,12 @@ const AppointmentConcierge = () => {
     {
       name: 'Dr. Abhishek Reddy Nimma',
       title: 'Consultant Oral & Maxillofacial Surgeon',
-      img: 'src/assets/images/abi.png'
+      img: '/images/dr-abhishek-reddy.png'
     },
     {
       name: 'Dr. Kranthi Nimma',
       title: 'Consultant Periodontist',
-      img: 'src/assets/images/kranthi.png'
+      img: '/images/dr-kranthi-nimma.png'
     }
   ];
 
@@ -991,7 +991,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
-          src="src/assets/images/clinic_hero_image_1779109449064.png"
+          src="/images/clinic-hero.png"
           alt="Modern Dental Clinic"
           className="w-full h-full object-cover opacity-[0.04]"
           referrerPolicy="no-referrer"
@@ -1546,7 +1546,7 @@ const ClinicLocationMap = () => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Railway Station Road representing connection from (340, 300) to (200, 230) */}
+                  {/* Railway Station Marg Road representing connection from (340, 300) to (200, 230) */}
                   <path 
                     d="M 340 300 L 260 300 L 260 230 L 200 230" 
                     fill="none" 
@@ -1564,7 +1564,7 @@ const ClinicLocationMap = () => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Ganj Market Road (210, 60) down to (200, 150) */}
+                  {/* Clock Tower Central Ganj Market Road (210, 60) down to (200, 150) */}
                   <path 
                     d="M 210 60 L 210 150 L 200 150" 
                     fill="none" 
@@ -1582,7 +1582,7 @@ const ClinicLocationMap = () => {
                     strokeLinejoin="round"
                   />
 
-                  {/* Main Bus Stand Entrance from (320, 80) down to Ganj crossing at (210, 80) */}
+                  {/* Main Bus Stand Entrance Parkway from (320, 80) down to Ganj crossing at (210, 80) */}
                   <path 
                     d="M 320 80 L 210 80" 
                     fill="none" 
@@ -1598,7 +1598,7 @@ const ClinicLocationMap = () => {
                     strokeLinecap="round" 
                   />
 
-                  {/* Clinical Hotspot Lane (Kaveri Udipi ) */}
+                  {/* Clinical Hotspot Lane (Kaveri Udipi Annex Road) */}
                   <path 
                     d="M 200 150 L 200 270" 
                     fill="none" 
@@ -1822,15 +1822,15 @@ const Team = () => {
     {
       name: 'Dr. Abhishek Reddy Nimma',
       role: 'Consultant Oral & Maxillofacial Surgeon',
-      image: 'src/assets/images/abi.png',
+      image: '/images/dr-abhishek-reddy.png',
       specialty: 'Maxillofacial, Trauma & Implant Surgery',
       bio: 'Highly experienced clinical surgeon specializing in complicated dental extractions, trauma care, and high-precision titanium implant fixtures.'
     },
     {
       name: 'Dr. Kranthi Nimma',
       role: 'Consultant Periodontist',
-      image: 'src/assets/images/kranthi.png',
-      specialty: 'Periodontist',
+      image: '/images/dr-kranthi-nimma.png',
+      specialty: 'Advanced Gum Health & Bone Regeneration',
       bio: 'Expert dental practitioner dedicated to active periodontal care, cosmetic smile makeovers, tooth alignment, and pain-free preventative maintenance.'
     }
   ];
