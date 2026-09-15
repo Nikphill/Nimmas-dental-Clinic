@@ -104,8 +104,8 @@ const BeforeAfterSlider = () => {
       subtitle: 'Braces & Clear Aligners',
       beforeTip: 'Crowded & Misaligned Teeth',
       afterTip: 'Perfect Aesthetic Arch',
-      beforeImg: 'https://images.unsplash.com/photo-1513415277900-a62401e19be4?auto=format&fit=crop&q=80&w=800&h=600',
-      afterImg: 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=800&h=600',
+      beforeImg: 'https://github.com/Nikphill/Nimmasdentalimgs/blob/main/crooked.png',
+      afterImg: 'https://github.com/Nikphill/Nimmasdentalimgs/blob/main/crooked%202.png',
       desc: 'Achieved a beautiful symmetrical smile arch and corrected heavy diagnostic crowding within 14 months using premium custom alignments.'
     },
     {
